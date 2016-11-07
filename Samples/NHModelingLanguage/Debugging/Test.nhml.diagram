@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nHDiagram dslVersion="1.0.0.0" Id="05809322-52ea-40a6-a16d-dd6de77a059f" absoluteBounds="0, 0, 11, 8.5" name="Test">
+  <nHModelMoniker Id="ab36f9dc-2bd1-4bce-9747-18f44658e143" />
+  <nestedChildShapes>
+    <entityShape Id="6f545771-a4a2-429d-901b-fee1994d566e" absoluteBounds="1.75, 1, 1.5, 1.1939925130208331">
+      <entityMoniker name="/ab36f9dc-2bd1-4bce-9747-18f44658e143/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c48f41b-c30c-4841-92ad-e56607874124" absoluteBounds="1.765, 1.46, 1.4700000000000002, 0.63399251302083326" name="Properties" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+    <entityShape Id="85a0906f-9d12-42cf-99eb-1a163e50e460" absoluteBounds="3.375, 3.25, 1.5, 0.80938964843749961">
+      <entityMoniker name="/ab36f9dc-2bd1-4bce-9747-18f44658e143/Manager" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8afe588-0fab-485d-9a54-6ab2fcb00b3d" absoluteBounds="3.39, 3.71, 1.4700000000000002, 0.2493896484375" name="Properties" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+    <inheritanceConnector Id="0b84c24b-0345-4eb9-a65d-0c1222c3502c" edgePoints="[(4.125 : 3.25); (4.125 : 1.59699625651042); (3.25 : 1.59699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <entityInheritedParentMoniker Id="deb79f0c-6916-4bea-8a64-8dcb51842e53" />
+      <nodes>
+        <entityShapeMoniker Id="85a0906f-9d12-42cf-99eb-1a163e50e460" />
+        <entityShapeMoniker Id="6f545771-a4a2-429d-901b-fee1994d566e" />
+      </nodes>
+    </inheritanceConnector>
+    <entityShape Id="e67adf1d-8935-40f4-8dba-b3d0d2895865" absoluteBounds="8, 2.375, 1.5, 1.0016910807291666">
+      <entityMoniker name="/ab36f9dc-2bd1-4bce-9747-18f44658e143/Company" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf67f912-6c9d-4803-a77e-ccbb7aab3733" absoluteBounds="8.015, 2.835, 1.4700000000000002, 0.44169108072916663" name="Properties" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+  </nestedChildShapes>
+</nHDiagram>

@@ -1,0 +1,42 @@
+﻿<#+ 
+    
+    public class PropertyDescription
+    {
+        public string Name {get; set;}
+        public Type Type {get; set;}
+    }
+
+
+    public class EntityDescription
+    {
+        public string Name {get; set;}
+        public IEnumerable<PropertyDescription> Properties { get; set; }
+    }
+
+    public static class Model 
+    {
+        public static IEnumerable<EntityDescription> Entities = new List<EntityDescription>
+            {
+                new EntityDescription 
+                {
+                    Name = "Company",
+                    Properties = new List<PropertyDescription>
+                    {
+                        new PropertyDescription { Name = "Name", Type = typeof(string)},
+                        new PropertyDescription { Name = "Shares", Type = typeof(Int64)},
+                        new PropertyDescription { Name = "MarketCap", Type = typeof(decimal)},
+                    }
+                },
+                new EntityDescription 
+                {
+                    Name = "Client",
+                    Properties = new List<PropertyDescription>
+                    {
+                        new PropertyDescription { Name = "Name", Type = typeof(string)},
+                        new PropertyDescription { Name = "Status", Type = typeof(Int32)},
+                    }
+                }
+
+           };
+    }
+#>

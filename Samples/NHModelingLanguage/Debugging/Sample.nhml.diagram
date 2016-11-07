@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nHModelingLanguageDiagram dslVersion="1.0.0.0" Id="c777d789-19ce-4ac1-a245-52e92964631b" absoluteBounds="0, 0, 11, 8.5" name="Sample">
+  <exampleModelMoniker Id="d8cfa6ec-898f-4b60-94ee-1bded82742a0" />
+  <nestedChildShapes>
+    <exampleShape Id="f05b24d3-e2fc-4772-95cc-39e420e79106" absoluteBounds="0.5, 1.75, 2, 0.75">
+      <exampleElementMoniker name="/d8cfa6ec-898f-4b60-94ee-1bded82742a0/ExampleElement1" />
+    </exampleShape>
+    <exampleShape Id="f0f56f7f-8d0d-41e0-84fa-653598c86dab" absoluteBounds="3, 0.5, 2, 0.75">
+      <exampleElementMoniker name="/d8cfa6ec-898f-4b60-94ee-1bded82742a0/ExampleElement2" />
+    </exampleShape>
+    <exampleConnector Id="9c429744-d2f7-492c-96ef-225508d20756" edgePoints="[(1.5 : 1.75); (1.5 : 0.875); (3 : 0.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="5a804eb1-ebd9-46ec-9a81-a2cd70fd4630">
+      <nodes>
+        <exampleShapeMoniker Id="f05b24d3-e2fc-4772-95cc-39e420e79106" />
+        <exampleShapeMoniker Id="f0f56f7f-8d0d-41e0-84fa-653598c86dab" />
+      </nodes>
+    </exampleConnector>
+  </nestedChildShapes>
+</nHModelingLanguageDiagram>

@@ -1,0 +1,32 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".cs" #>
+<#@ NHModelingLanguage processor="NHModelingLanguageDirectiveProcessor" requires="fileName='Test.nhml'" #>
+<#@ assembly name="EPAM.NHModelingLanguage.Dsl.dll" #>
+<#@ import namespace="EPAM.NHModelingLanguage" #>
+using System;
+
+namespace T4Sample
+{
+<# 
+    NHModel model= this.NHModel;
+    foreach(Entity ent in model.Entities) {
+#>
+    public partial class <#=ent.Name #> <#=(ent.Parent != null)? ": " + ent.Parent.Name : "" #>
+    {
+<# 
+        foreach(Property prop in ent.Properties) {
+#>
+        partial void Validate<#= prop.Name #>(); 
+        private <#= prop.Type.ToString() #> _<#= prop.Name #>;
+        public <#= prop.Type.ToString() #> <#= prop.Name #> { 
+            get { return _<#= prop.Name #>;  } 
+            set {
+                Validate<#= prop.Name #>();
+                _<#= prop.Name #> = value; 
+            } 
+        }
+
+<#        } #>
+    }
+<#  } #>
+}

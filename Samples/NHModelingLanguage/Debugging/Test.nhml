@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nHModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ab36f9dc-2bd1-4bce-9747-18f44658e143" xmlns="http://schemas.microsoft.com/dsltools/NHModelingLanguage">
+  <entities>
+    <nHModelHasEntities Id="b19330d6-f17d-481f-97f6-9e6b2dfe1510">
+      <entity Id="4300ffd1-0921-429d-b1e3-353b55a90d85" name="User">
+        <properties>
+          <entityHasProperties Id="93b1c421-e1fd-43f7-b5c6-dc27cdbe8af0">
+            <property Id="263e822d-e7da-4910-bb07-5de5efc4cd7f" name="Name" type="String" />
+          </entityHasProperties>
+          <entityHasProperties Id="8712a2b3-58bf-4be8-a288-96a1c670e990">
+            <property Id="a64db327-2661-4cac-aacb-8879de359033" name="Age" type="Int32" />
+          </entityHasProperties>
+        </properties>
+      </entity>
+    </nHModelHasEntities>
+    <nHModelHasEntities Id="96d20395-9f1f-487e-b709-a21d91b6181d">
+      <entity Id="3c43eca2-8d03-4aeb-97df-c8f328e76e49" name="Manager">
+        <parent>
+          <entityInheritedParent Id="deb79f0c-6916-4bea-8a64-8dcb51842e53">
+            <entityMoniker name="/ab36f9dc-2bd1-4bce-9747-18f44658e143/User" />
+          </entityInheritedParent>
+        </parent>
+      </entity>
+    </nHModelHasEntities>
+    <nHModelHasEntities Id="2ecc21f3-eed0-4ccc-9a21-74469df5b508">
+      <entity Id="8e1d65b6-06ae-40fd-af5a-842efcee75fe" name="Company">
+        <properties>
+          <entityHasProperties Id="9b87ac83-0bfd-4c51-a7f3-779deac3f4da">
+            <property Id="d72fd273-5935-4363-9a2e-6a25442e934e" name="Name" type="String" />
+          </entityHasProperties>
+        </properties>
+      </entity>
+    </nHModelHasEntities>
+  </entities>
+</nHModel>
